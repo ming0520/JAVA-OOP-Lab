@@ -36,7 +36,7 @@ public class calculateCharges {
 				charge += PRICE_FIRST_POUND;
 				//minus first pound
 				pound --;
-				//charge for the ramining pound
+				//charge for the remaining pound
 				charge += (pound * PRICE_EXCEED_POUND);
 			}
 			//Display the charge
