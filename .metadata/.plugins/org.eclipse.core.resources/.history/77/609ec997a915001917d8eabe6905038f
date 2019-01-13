@@ -1,0 +1,12 @@
+package pack1;
+
+public class CalculateRevenue {
+
+	public static void main(String[] args) {
+		Concert BigBang = new Concert();
+		
+		BigBang.setNumberOfCategories(3);
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package pack1;
+
+public class calculateSlices {
+
+	public static void main(String[] args) {
+		double diameterOfPizza;
+		Pizza Big = new Pizza();
+		
+		System.out.print("Diameter of pizza: ");
+
+	}
+
+}

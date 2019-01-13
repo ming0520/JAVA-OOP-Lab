@@ -1,0 +1,19 @@
+package pack1;
+
+import java.util.*;
+
+public class Marking {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in);
+		Student Sebastian = new Student();
+		
+		System.out.println("\nWelcome to marks sheet");
+		System.out.println("Enter the name of student: ");
+		Sebastian.name = input.next();
+		System.out.println("Enter the Roll Number: ");
+		Sebastian.rollnum = input.next();
+
+	}
+
+}

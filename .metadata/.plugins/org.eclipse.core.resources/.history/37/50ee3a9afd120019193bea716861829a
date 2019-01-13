@@ -1,0 +1,35 @@
+package pack1;
+
+import java.util.*;
+
+public class Marking {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in);
+		Student Sebastian = new Student();
+		
+		int total = 0;
+		double percentage;
+		String[] Division = new String[3];
+		Division[0] = "First";
+		Division[1] = "Second";
+		Division[2] = "Third"
+		
+		
+		System.out.println("\nWelcome to marks sheet");
+		System.out.println("Enter the name of student: ");
+		Sebastian.name = input.next();
+		System.out.println("Enter the Roll Number: ");
+		Sebastian.rollnum = input.next();
+		System.out.println("Enter the College Name: ");
+		Sebastian.colledge = input.next();
+		System.out.println("Please enter mark for---------");
+		
+		for(int i = 0; i < 5; i++) {
+			System.out.print("Subject " + i+1 + " :");
+			Sebastian.subject[i] = input.nextInt();
+		}
+
+	}
+
+}

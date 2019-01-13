@@ -1,0 +1,21 @@
+package pack1;
+
+import java.util.*;
+
+public class CommaSeperateThousands {
+
+	public static void main(String[] args) {
+		int number = 0;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Please enter an integer >= 1000: ");
+		number = input.nextInt();
+		
+
+	}
+	
+	public static void seperate_thousands(int number) {
+		System.out.println(number %= 1000);
+	}
+
+}

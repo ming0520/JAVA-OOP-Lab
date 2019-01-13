@@ -1,0 +1,33 @@
+package pack1;
+
+import java.util.*;
+
+public class reverseNumber {
+
+	/*public static void main(String[] args) {
+		int number = 0;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		number = input.nextInt();
+		reverseNumberInt(number);
+		input.close();
+	}
+	
+	private static void reverseNumberInt(int number) {
+		System.out.print(number%10);
+		number /= 10;
+		if(number > 0)
+			reverseNumberInt(number);
+	}*/
+	
+	public static void main (String args[]) {
+		int num = 0;
+		System.out.println("Input your number and press enter: ");
+		Scanner in = new Scanner(System.in);
+		num = in.nextInt();
+		System.out.println("Reverse of the input number is: ");
+		reverseMethod(num);
+		System.out.println();
+	}
+
+}

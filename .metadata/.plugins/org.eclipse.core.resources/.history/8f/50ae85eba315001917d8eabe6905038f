@@ -1,0 +1,63 @@
+package pack1;
+
+import java.util.*;
+
+public class TotalRevenue {
+
+	public static void main(String[] args) {
+		// Create an object(Scanner) to get user input
+		Scanner input = new Scanner(System.in);
+		/*
+		 * A constant that indicate Maximum number of categories
+		 */
+		final int NUMBER_OF_CATEGORIES = 3;
+		/*
+		 * An array that indicates the price of tickets for each categories by index
+		 * Index    Categories   Price
+		 *  0	    Orchestra    $25
+		 *  1		Main Floor	 $30
+		 *  2		Balcony		 $15
+		 */
+		final int[] PRICE_OF_TICKETS = {25,30,15};
+		/*
+		 * An array that store the name of categories by index
+		 */
+		final String[] NAME_OF_CATEGORIES= {"Orchestra      ",
+						  					"Main Floor     ",
+						  					"Balcony        "};
+		/*
+		 * An Array that store the number of tickets sold for each categories by index
+		 */
+		int[] tickets_sold = new int[NUMBER_OF_CATEGORIES];
+		// A variable that store the sum of each categories in dollar
+		int total_revenue = 0;
+		/*
+		 * Display the menu in table form
+		 * Ask user the number of tickets sold
+		 */
+		System.out.println("============Calculate Total Revenue==========");
+		System.out.println("Enter number of tickets sold");
+		System.out.println("Categories     Price     Tickets Sold     Total");
+		System.out.println("----------     -----     ------------     -----");
+		
+		/*
+		 * A loop that ask the tickets sold for each categories
+		 * and store the input at array tickets_sold
+		 */
+		for(int i = 0; i < NUMBER_OF_CATEGORIES; i++) {			
+			System.out.print(NAME_OF_CATEGORIES[i]);
+			System.out.print("$" + PRICE_OF_TICKETS[i]);
+			System.out.print("\t     ");
+			
+			tickets_sold[i] = input.nextInt();
+			//System.out.print("$" + PRICE_OF_TICKETS[i] * tickets_sold[i]);
+		}
+		
+		for(int i = 0; i < NUMBER_OF_CATEGORIES; i++) {
+			total_revenue += (tickets_sold[i] * PRICE_OF_TICKETS[i]);
+		}
+		
+		System.out.println("Total revenue  $" + total_revenue);
+	}
+
+}
