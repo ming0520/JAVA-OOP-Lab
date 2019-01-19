@@ -1,0 +1,10 @@
+package package1;
+
+public class isPrime {
+
+	public static void main(String[] args) {
+		int prime = 1;
+
+	}
+
+}
