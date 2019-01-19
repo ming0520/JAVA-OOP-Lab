@@ -1,0 +1,30 @@
+package package1;
+
+public class MMath {
+	
+	int number1, number2;
+	
+	public void greater(int num1, int num2) {
+		this.number1 = num1;
+		this.number2 = num2;
+		swap();
+	}
+	
+	public void swap () {
+		int swap;
+		if(this.number2 < this.number1) {
+			swap = this.number1;
+			this.number1 = this.number2;
+			this.number1 = swap;
+		}
+	}
+	
+	public void dispIsGreater() {
+		System.out.println(number1 +" is Greater than " + number2);
+		isDevisible();
+	}
+	
+	public boolean isDevisible() {
+	}
+	
+}

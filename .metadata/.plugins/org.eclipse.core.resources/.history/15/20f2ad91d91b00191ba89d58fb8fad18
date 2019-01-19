@@ -1,0 +1,14 @@
+package package1;
+
+import java.util.*;
+
+public class Menu {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		Quadratic quadraticEquation = new Quadratic();
+		
+		System.out.println("Given quadratic equation: ax^2 + bx + c");
+	}
+
+}

@@ -1,0 +1,24 @@
+package package1;
+
+import java.util.*;
+
+public class CalculateBill {
+	
+	public static final double COUNTRY_TAX_A = 0.07;
+	public static final double COUNTRY_TAX_B = 0.05;
+	
+
+	public static void main(String[] args) {
+		double purchase,taxRate;
+		char country;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Amount of purchase? ");
+		purchase = input.nextDouble();
+		
+		System.out.print("Country? ");
+		country = input.next().charAt(0);
+	}
+
+}

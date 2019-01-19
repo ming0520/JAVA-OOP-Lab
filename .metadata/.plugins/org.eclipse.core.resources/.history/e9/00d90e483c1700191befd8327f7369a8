@@ -1,0 +1,33 @@
+package package1;
+
+import java.util.*;
+
+public class calculateCharges {
+	
+	public static final double PRICE_FIRST_POUND = (double)10;
+	public static final double PRICE_EXCEED_POUND = (double)6;
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double pound, charge = 0;
+		
+		System.out.print("WEIGHT (Pound): ");
+		pound = input.nextDouble();
+		
+		if(pound >= 0) {
+			if(pound <= 1) {
+				charge = PRICE_FIRST_POUND;
+			}
+			else if (pound == 0) {
+				charge = 0;
+			}
+			else if(pound > 1){
+				charge += PRICE_FIRST_POUND;
+				pound --;
+				charge += (pound * PRICE_EXCEED_POUND);
+			}
+			System.out.println("CHARGE: " + charge);
+		}
+	}
+
+}

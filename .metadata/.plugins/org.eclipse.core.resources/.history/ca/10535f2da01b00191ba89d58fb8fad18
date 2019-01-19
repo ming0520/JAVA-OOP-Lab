@@ -1,0 +1,33 @@
+package package1;
+
+import java.util.*;
+
+public class Menu {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		MMath check = new MMath();
+		
+		int value1 = 0, value2 = 0;
+		boolean isInteger = true;
+		
+		while (!isInteger) {
+			System.out.println("Enter two integer values: ");
+			value1 = input.nextInt();
+			value2 = input.nextInt();
+			
+			if(value1 < 0 || value2 < 0) {
+				System.out.println("Invalid value(s) entered");
+			}
+			else
+				break;
+		}
+		
+		boolean isDivisible = check.isDevisible(value1, value2);
+		
+		if(isDivisible) {
+			System.out.println(number);
+		}
+	}
+
+}

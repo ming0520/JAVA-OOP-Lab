@@ -1,0 +1,9 @@
+package package1;
+
+public class FICATax {
+	float currentEarnings, prevEarnings;
+	
+	public void setCE (float ce) {
+		this.currentEarnings = ce;
+	}
+}

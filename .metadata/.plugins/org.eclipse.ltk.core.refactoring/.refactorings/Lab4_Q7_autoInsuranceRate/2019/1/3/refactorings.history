@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;&apos; to &apos;package1.Insurance.valueOfCar&apos;&#x0D;&#x0A;- Original project: &apos;Lab4_Q7_autoInsuranceRate&apos;&#x0D;&#x0A;- Destination element: &apos;package1.Insurance.valueOfCar&apos;&#x0D;&#x0A;- Original element: &apos;package1.Insurance.valueOfCar&apos;" description="Copy field" destination="/src&lt;package1{Insurance.java[Insurance^valueOfCar" element1="/src&lt;package1{Insurance.java[Insurance^valueOfCar" flags="589830" id="org.eclipse.jdt.ui.copy" members="1" policy="org.eclipse.jdt.ui.copyMembers" stamp="1547876465773" version="1.0"/>
+</session>

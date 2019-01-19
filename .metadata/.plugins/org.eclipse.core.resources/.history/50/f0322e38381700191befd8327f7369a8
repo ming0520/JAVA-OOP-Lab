@@ -1,0 +1,20 @@
+package pack1;
+
+public class Grade {
+	
+	public static final int[] GRADE = {4,3,2,1,0};
+	
+	public void getGradePoints(String grade) {
+		int gradePoints = 0;
+		
+		char c = grade.charAt(0);
+
+		switch (grade) {
+			case 'A':
+				gradePoints = GRADE[0];
+				break;
+			case 'B':
+		}
+	}
+
+}

@@ -1,0 +1,40 @@
+package package1;
+
+public class Quadratic {
+	double a, b, c;
+	double roots1,roots2;
+	double determinant;
+	
+	public void setQuadratic (double a, double b, double c) {
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+	
+	private int checkDeterminant () {
+		// b^2-4ac
+		this.determinant = Math.pow(this.a, 2) - 4 * a * c;
+		
+		// run only real and different roots
+		if(determinant > 0) {
+			return 0;
+		}
+		//run only when real and equal roots
+		else if(determinant == 0) {
+			return 1;
+		}
+		//if roots are not real
+		else {
+			return 2;
+		}
+	}
+	
+	public void calcRoots() {
+		
+		switch(checkDeterminant()) {
+			case 0:
+				this.roots1 = ( - b + Math.sqrt(this.determinant) / 2 * this.a);
+				
+		}
+	}
+}

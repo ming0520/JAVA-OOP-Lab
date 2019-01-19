@@ -1,0 +1,39 @@
+package pack1;
+
+public class Grade {
+	
+	public static final int[] GRADE = {4,3,2,1,0};
+	int gradePoints = 0;
+	char c = 'F';
+	
+	public void setGrade(String grade) {
+		char c = grade.charAt(0);
+		
+	}
+	
+	public int getGradePoints() {
+
+		switch (c) {
+			case 'A':
+				this.gradePoints = GRADE[0];
+				break;
+			case 'B':
+				this.gradePoints = GRADE[1];
+				break;
+			case 'C':
+				this.gradePoints = GRADE[2];
+				break;
+			case 'D':
+				this.gradePoints = GRADE[3];
+				break;
+			case 'F':
+				this.gradePoints = GRADE[4];
+				break;
+			default:
+				System.out.println("Invalid Grade");
+				return 1;
+		}
+		return this.gradePoints;
+	}
+
+}

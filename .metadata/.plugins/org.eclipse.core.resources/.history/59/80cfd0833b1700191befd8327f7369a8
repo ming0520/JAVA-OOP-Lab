@@ -1,0 +1,22 @@
+package package1;
+
+import java.util.*;
+
+public class calculateCharges {
+	
+	public static final int PRICE_FIRST_POUND = 10;
+	public static final int PRICE_EXCEED_POUND = 6;
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double pound, charge;
+		
+		System.out.print("WEIGHT (Pound): ");
+		pound = input.nextDouble();
+		
+		if(pound < 1) {
+			charges = PRICE_FIRST_POUND;
+		}
+	}
+
+}

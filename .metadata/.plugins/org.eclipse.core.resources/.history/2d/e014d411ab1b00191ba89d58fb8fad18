@@ -1,0 +1,22 @@
+package package1;
+
+import java.util.*;
+
+public class Menu {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		Insurance insurance = new Insurance();
+		
+		int age;
+		int not;
+		float voc;
+		
+		System.out.print("DRIVER'S AGE?		 ");
+		age = input.nextInt();
+		
+		System.out.print("NUMBER OF TICKETS? ");
+		not = input.nextInt();
+	}
+
+}

@@ -1,0 +1,55 @@
+package package1;
+
+public class Insurance {
+	public static final double BASE_RATE 		= (float) 0.05;
+	
+	public static final double RATE_UNDER25 		= (float) 1.15;
+	public static final double RATE_25TO29		= (float) 1.10;
+	public static final double RATE_OVER29		= (float) 1.00;
+	
+	public static final double[] TICKETS_RATE 	= 
+		{1.10, 1.25, 1.50};
+	
+	int driverAge;
+	int numberOfTickets;
+	long valueOfCar;
+	double premium;
+	double totalRate = BASE_RATE;
+	
+	public float autoInsurance(int age, int not, long voc) {
+		this.driverAge =age;
+		this.numberOfTickets = not;
+		this.valueOfCar = voc;
+		
+		rateByAge();
+		rateByTickets();
+		System.out.println(totalRate);
+		this.premium = valueOfCar * totalRate;
+		return premium;
+	}
+	
+	private void rateByAge() {
+		
+		
+		if(this.driverAge > 29) {
+			this.totalRate *= RATE_OVER29;
+		}
+		else if(this.driverAge >= 25 && this.driverAge <= 29) {
+			this.totalRate *= RATE_25TO29;
+		}
+		else if(this.driverAge < 25) {
+			this.totalRate *= RATE_UNDER25;
+		}
+		else {
+			System.out.println("Error: Can't calculate total rate");
+		}
+		System.out.println(totalRate);
+	}
+	
+	private void rateByTickets() {
+		this.totalRate *= TICKETS_RATE[this.numberOfTickets - 1];
+		System.out.println(totalRate);
+	}
+	
+	
+}

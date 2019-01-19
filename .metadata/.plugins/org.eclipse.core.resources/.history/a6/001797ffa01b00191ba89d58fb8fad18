@@ -1,0 +1,21 @@
+package package1;
+
+public class MMath {
+	
+	int number1, number2;
+	
+	public void setNumber(int num1, int num2) {
+		this.number1 = number1;
+		this.number2 = number2;
+		swap();
+	}
+	
+	public void swap () {
+		int swap;
+		if(this.number1)
+	}
+	
+	public boolean isDevisible() {
+	}
+	
+}
