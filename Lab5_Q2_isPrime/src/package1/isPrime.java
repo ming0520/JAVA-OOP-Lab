@@ -14,6 +14,10 @@ public class isPrime {
 			isPrime = true;
 			System.out.print("Enter number to check prime number: ");
 			number = input.nextInt();
+			if(number < 0) {
+				System.out.println("Prime must be an integer");
+				continue;
+			}
 			
 			for (int i = 2; i <= number / 2 ; i++) {
 				if(number % i == 0){
@@ -21,7 +25,7 @@ public class isPrime {
 					break;
 				}
 			}
-			System.out.println(isPrime);
+			//System.out.println(isPrime);
 			
 			if(isPrime) {
 				System.out.println("Is prime");
@@ -29,12 +33,7 @@ public class isPrime {
 			else if (!isPrime) {
 				System.out.println("Not prime");
 			}
-			else {
-				System.out.println("Error");
-			}
-		}while(number >= 0);
-		
-		input.close();
+		}while(true);
 
 	}
 
