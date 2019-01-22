@@ -1,7 +1,0 @@
-package pack1;
-
-public class Grade {
-	
-	public static final int[] GRADE = {4,3,2,1,0};
-
-}
