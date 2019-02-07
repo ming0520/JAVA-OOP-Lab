@@ -1,9 +1,0 @@
-package snippet;
-
-public class Snippet {
-	5.	Social security (FICA) tax is currently 7.65 percent of earnings up to $54.00 for the year.
-	Write a program that accepts earnings for the current week and previous earnings up to the
-	current week, and returns the amount of FICA tax to be withheld.
-	
-}
-

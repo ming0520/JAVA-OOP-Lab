@@ -42,7 +42,7 @@ public class Grade {
 		System.out.print("A: " + a_s);
 		System.out.print("\tB: " + b_s);
 		System.out.print("\tC: " + c_s);
-		System.out.print("\tD: " + c_s);
+		System.out.print("\tD: " + d_s);
 		System.out.print("\tF: " + f_s);
 		System.out.println("\n===================================");
 	}
@@ -51,7 +51,7 @@ public class Grade {
 		
 		Scanner input = new Scanner(System.in);
 		int mark = 1;
-		System.out.println("Enter to get the grade: ");
+		System.out.println("Enter mark to get the grade: ");
 		
 		while(mark > 0) {
 			
@@ -63,6 +63,7 @@ public class Grade {
 			}
 			else {
 				System.out.println("Invalid input!");
+				System.exit(0);
 			}
 			
 			if(mark < 0) {
