@@ -5,7 +5,7 @@ import java.util.*;
 public class CalculateBill {
 	
 	public static final double COUNTRY_TAX_A = (double)1.07;
-	public static final double COUNTRY_TAX_Other = (double)1.05;
+	public static final double COUNTRY_TAX_OTHER = (double)1.05;
 	
 
 	public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class CalculateBill {
 				taxRate = COUNTRY_TAX_A;
 				break;
 			default:
-				taxRate = COUNTRY_TAX_A;
+				taxRate = COUNTRY_TAX_OTHER;
 				break;
 		}
 
